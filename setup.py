@@ -3,8 +3,8 @@ from setuptools import setup, find_packages
 import subprocess
 
 setup(
-    name="Layback Machine",
-    version="0.0.1.dev1",
+    name="Layback",
+    version="0.0.1",
     description="Command-line tool which creates an animated GIF of a given URLs history.",
     long_description=open('README.md').read(),
     url="http://github.com/scottmey/layback",
