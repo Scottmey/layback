@@ -3,7 +3,7 @@
 Layback Machine is a command-line tool that creates an animated gif of a given URLs history via the Wayback Machine. Depending on the age of your site, it may take some considerable time to process.
 
 ```sh
-layback google.com /Downloads/
+layback -url google.com -d /Downloads/
 ```
 
 ## Dependencies
@@ -13,7 +13,7 @@ layback google.com /Downloads/
 ## Installation
 
 ```
-pip install layback_machine
+pip install layback
 ```
 
 ## Usage
