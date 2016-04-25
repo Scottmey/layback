@@ -12,6 +12,7 @@ layback -url google.com -d /Downloads/
 
 ## Installation
 
+Use [pip](https://pypi.python.org/pypi/pip):
 ```
 pip install layback
 ```
@@ -30,7 +31,3 @@ optional arguments:
 ## Support
 
 Supports both Python 2 & 3.
-
-## Example Output
-![movie](https://cloud.githubusercontent.com/assets/969752/14750417/bb214ef2-0892-11e6-9a01-71c9824c9f3e.gif)
-
