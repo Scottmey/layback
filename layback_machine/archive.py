@@ -3,9 +3,16 @@
 # Wayback Machine gif Generator
 
 import re, os
-import urllib2 as rq
 from   selenium import webdriver
 import imageio
+
+try:
+    import urllib.request as rq
+    from urllib.parse import urlparse
+except ImportError:
+    import urllib2 as rq
+    from urlparse import urlparse
+
 
 class Archive(object):
     def __init__(self, url, download_path):
@@ -23,7 +30,7 @@ class Archive(object):
         mementos = []
 
         for line in r:
-            mementos.append(re.search("(?P<url>https?://[^\s]+)", line).group("url").replace(">;", ""))
+            mementos.append(re.search("(?P<url>https?://[^\s]+)", str(line)).group("url").replace(">;", ""))
 
         mementos = mementos[2:]
 
@@ -57,4 +64,4 @@ class Archive(object):
 
         imageio.mimsave(self.download_path + 'movie.gif', image_data)
 
-        print "successfully saved gif to " + self.download_path + 'movie.gif'
+        print("successfully saved gif to " + self.download_path + "movie.gif")
