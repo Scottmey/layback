@@ -1,9 +1,9 @@
 # Layback Machine
 
-Layback Machine is a command-line tool that creates an animated gif of a given URLs history via the Wayback Machine. Depending on the age of your site, it may take some considerable time to process.
+Creates an animated GIF from a given URLs history via the Wayback Machine. Depending on the age of your site, it may take some considerable time to process.
 
 ```sh
-layback -url google.com -d /Downloads/
+layback -url example.com -d /Downloads/
 ```
 
 ## Dependencies
@@ -27,7 +27,3 @@ optional arguments:
   -url URL    the URL of the resource you want to download.
   -d D        directory to save the files.
 ```
-
-## Support
-
-Supports both Python 2 & 3.
