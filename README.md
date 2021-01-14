@@ -8,7 +8,7 @@ layback -url example.com -d /Downloads/
 
 ## Dependencies
 
-[PhantomJS](http://phantomjs.org/), [Selenium](https://pypi.python.org/pypi/selenium), [imageio](https://pypi.python.org/pypi/imageio)
+[Selenium](https://pypi.python.org/pypi/selenium), [imageio](https://pypi.python.org/pypi/imageio)
 
 ## Installation
 
